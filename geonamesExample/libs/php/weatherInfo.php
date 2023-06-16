@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 $executionStartTime = microtime(true);
 
 // API source url
-$url = "http://api.geonames.org/weatherJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=diartes";
+$url = "http://api.geonames.org/weatherJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=username";
 
 // Initialize Curl 
 $ch = curl_init($url);

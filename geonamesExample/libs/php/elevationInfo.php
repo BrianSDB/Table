@@ -7,7 +7,7 @@
 
 	$executionStartTime = microtime(true);
 
-	$url='http://api.geonames.org/astergdemJSON?lat=50.01&lng=10.2&username=diartes';
+	$url='http://api.geonames.org/astergdemJSON?lat=50.01&lng=10.2&username=username';
 
 	$ch = curl_init($url);
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);

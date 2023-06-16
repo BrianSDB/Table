@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 $executionStartTime = microtime(true);
 
 // API source url
-$url = "http://api.geonames.org/timezoneJSON?lat=47.01&lng=10.2&username=diartes";
+$url = "http://api.geonames.org/timezoneJSON?lat=47.01&lng=10.2&username=username";
 
 // Initialize Curl 
 $ch = curl_init($url);
