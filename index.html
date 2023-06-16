@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/geonamesExample/libs/css/style.css" rel="stylesheet">
+    <title>Api Table</title>
+</head>
+<body>
+    <h1>Api Tables using HTML,jQwery,Ajax and PHP</h1>
+   
+    <div id="preloader"></div>
+
+   
+
+
+    <div id="apiTable">
+        <table>
+          <thead>
+            <tr>
+              <th>API Name</th>
+              <th>API Description</th>
+              <th>Click Submit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="apiName">Timezone</td>
+              <td class="apiDescription">
+                Returns the timezone.
+              </td>
+              <td class="wrap">
+                <button id="timezoneBtn">Submit</button>
+              </td>
+
+            </tr>
+            <tr>
+              <td id="apiName">Weather</td>
+              <td id="apiDescription">
+                 Weather stations with the most recent weather observations.
+              </td>
+              <td class="wrap">
+                <button id="weatherBtn">Submit</button>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="apiName">Elevation info</td>
+              <td class="apiDescription">
+                Returns the elevation information.
+              </td>
+              
+              <td class="wrap">
+                <button id="elevationBtn">Submit</button>
+              </td>            
+            </tr>
+
+            <tr>
+              <td colspan="4" id="result">Result: </td>
+            </tr>
+  
+            
+          </tbody>
+  
+        </table>
+      </div>
+
+
+      
+    <script laguage="Javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> 
+    <script type="text/javascript" src="geonamesExample/libs/js/script.js"></script>
+
+</body>
+</html>
