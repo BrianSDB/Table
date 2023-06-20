@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/geonamesExample/libs/css/style.css" rel="stylesheet">
+    <link href="geonamesExample/libs/css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <title>Api Table</title>
 </head>
 <body>
@@ -27,7 +30,12 @@
             <tr>
               <td class="apiName">Timezone</td>
               <td class="apiDescription">
-                Returns the timezone.
+                Returns the timezone:
+                <label for="lng">Longitude:</label>
+                <input id="lng" type="number" value="47.01">
+                <label for="lat">Latitude:</label>
+                <input id="lat" type="number" value="10.2">
+                
               </td>
               <td class="wrap">
                 <button id="timezoneBtn">Submit</button>
@@ -37,7 +45,14 @@
             <tr>
               <td id="apiName">Weather</td>
               <td id="apiDescription">
-                 Weather stations with the most recent weather observations.
+                 Weather stations with the most recent weather observations:
+                 <select id="stationName">
+                  <option value="stationName1">HARLAN</option>
+                  <option value="stationName2">Rabil International Airport</option>
+                  <option value="stationName3">Chatham-Kent Airport</option>
+                  <option value="stationName4">PRAIA INTL</option>
+                  <option value="stationName5">GUNNISON 668</option>
+                 </select>
               </td>
               <td class="wrap">
                 <button id="weatherBtn">Submit</button>
@@ -47,7 +62,13 @@
             <tr>
               <td class="apiName">Elevation info</td>
               <td class="apiDescription">
-                Returns the elevation information.
+                Returns the elevation information:
+                <label for="lng">Longitude:</label>
+                <input id="lng" type="number">
+                <label for="lat">Latitude:</label>
+                <input id="lat" type="number">
+              
+                
               </td>
               
               <td class="wrap">
@@ -58,6 +79,7 @@
             <tr>
               <td colspan="4" id="result">Result: </td>
             </tr>
+            
   
             
           </tbody>
